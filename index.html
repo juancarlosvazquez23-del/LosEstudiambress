@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Estudiambres - Pitch Deck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div id="presentation-container">
+        
+        <div class="slide active layout-center">
+            <h1 class="fade-in delay-1 glow-text">Los Estudiambres</h1>
+            <h2 class="fade-in delay-2">Ecosistema White-Label Omnicanal</h2>
+            <br>
+            <div class="text-cyan fade-in delay-3" style="font-size: 1.5rem; font-weight: 600;">
+                Innovación Estudiantil, Calidad Empresarial
+            </div>
+            <div class="badge fade-in delay-4">
+                <i class="fas fa-code text-teal"></i> Desarrollado por: [Juan Carlos Vazquez GuzmanS]
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="layout-split">
+                <div>
+                    <h1 class="fade-in delay-1">El Problema</h1>
+                    <p class="fade-in delay-2">La brecha digital ahoga a los pequeños comercios. Las plataformas tradicionales imponen condiciones destructivas:</p>
+                    <ul style="list-style-type: none; margin-left: 0;">
+                        <li class="fade-in delay-3"><i class="fas fa-exclamation-triangle text-teal"></i> <strong>Comisiones abusivas</strong> (hasta 30%) por pedido.</li>
+                        <li class="fade-in delay-4"><i class="fas fa-user-slash text-teal"></i> <strong>Pérdida de identidad</strong>.</li>
+                        <li class="fade-in delay-5"><i class="fas fa-chart-line text-teal"></i> <strong>Nulo acceso a datos</strong> de los clientes.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="fade-in delay-1">La Solución (SaaS)</h1>
+                    <p class="fade-in delay-2"><strong>"Los Estudiambres"</strong> democratiza la tecnología mediante un modelo sustentable.</p>
+                    <ul style="list-style-type: none; margin-left: 0;">
+                        <li class="fade-in delay-3"><i class="fas fa-handshake text-cyan"></i> <strong>Suscripción Mensual:</strong> Cero comisiones por venta. Renta fija accesible.</li>
+                        <li class="fade-in delay-4"><i class="fas fa-store text-cyan"></i> <strong>Lienzo en Blanco:</strong> Cada local controla su marca al 100%.</li>
+                        <li class="fade-in delay-5"><i class="fas fa-mobile-alt text-cyan"></i> <strong>Omnicanalidad:</strong> Domicilio y Presencial.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h1 class="fade-in delay-1">Arquitectura Técnica y Stack</h1>
+            <p class="text-light fade-in delay-2" style="margin-bottom: 2rem;">Construido con Kotlin nativo bajo principios de Clean Architecture.</p>
+            <div class="layout-split">
+                <div>
+                    <h3 class="fade-in delay-3"><i class="fas fa-database text-teal"></i> Sincronización Realtime</h3>
+                    <p class="fade-in delay-4">Utilizamos <strong>Firebase Realtime Database</strong> para garantizar que los estados se reflejen en milisegundos.</p>
+                    
+                    <h3 class="fade-in delay-5" style="margin-top: 1.5rem;"><i class="fas fa-image text-teal"></i> Carga Optimizada</h3>
+                    <p class="fade-in delay-6">Renderizado asíncrono utilizando <strong>Coil</strong> y persistencia mediante URLs directas.</p>
+                </div>
+                <div class="fade-in delay-4">
+                    <div class="code-block glass-panel">
+// Esquema NoSQL: Firebase Realtime
+{
+  "stores": {
+    "store_id_001": {
+      "name": "Tacos El Estudiante",
+      "status": "OPEN",
+      "subscription": "ACTIVE",
+      "menu": {
+        "item_01": {
+          "name": "Taco al Pastor",
+          "price": 15.00
+        }
+      }
+    }
+  }
+}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h1 class="fade-in delay-1">Visión Omnicanal</h1>
+            <p class="text-light fade-in delay-2" style="margin-bottom: 2rem;">Una plataforma para dominar todos los canales de venta.</p>
+            <div class="layout-split">
+                <div class="card cyan-border fade-in delay-3 interactive-card" style="align-items: center; text-align: center;">
+                    <i class="fas fa-motorcycle text-cyan icon-xl"></i>
+                    <h3>Delivery (A Domicilio)</h3>
+                    <p>El sistema gestiona la dirección, calcula el tiempo de entrega y asigna el pedido al repartidor del local.</p>
+                </div>
+                <div class="card fade-in delay-4 interactive-card" style="align-items: center; text-align: center;">
+                    <i class="fas fa-utensils text-teal icon-xl"></i>
+                    <h3>Dine-In (Presencial)</h3>
+                    <p>El cliente escanea el QR en la mesa, y hace el pedido directo a cocina. Cero tiempos de espera.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="layout-split">
+                <div>
+                    <h1 class="fade-in delay-1">Panel del Dueño (ERP)</h1>
+                    <p class="fade-in delay-2">La <strong class="text-cyan">renta mensual</strong> se justifica entregando el control absoluto.</p>
+                    <ul style="list-style-type: none; margin-left: 0; margin-top: 1rem;">
+                        <li class="fade-in delay-3" style="margin-bottom: 1rem;"><i class="fas fa-paint-brush text-teal"></i> <strong>Gestión de Marca.</strong></li>
+                        <li class="fade-in delay-4" style="margin-bottom: 1rem;"><i class="fas fa-box-open text-teal"></i> <strong>Control de Catálogo en tiempo real.</strong></li>
+                        <li class="fade-in delay-5" style="margin-bottom: 1rem;"><i class="fas fa-bullhorn text-teal"></i> <strong>Marketing Integrado.</strong></li>
+                    </ul>
+                </div>
+                <div class="layout-center fade-in delay-4">
+                    <div class="qr-card floating">
+                        <i class="fas fa-qrcode icon-xl"></i>
+                        <h3>Códigos QR Inteligentes</h3>
+                        <p style="font-size: 0.9rem; margin-top: 1rem;">
+                            Generados con <strong>ZXing</strong>. Enlazan la mesa física con el carrito de compras digital.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h1 class="fade-in delay-1">Logística Avanzada</h1>
+            <p class="text-light fade-in delay-2" style="margin-bottom: 2rem;">Operativa en tiempo real para minimizar fricciones.</p>
+            
+            <div class="card interactive-card fade-in delay-3" style="display: flex; gap: 1rem; align-items: center;">
+                <div class="icon-circle"><i class="fas fa-map-marked-alt text-teal"></i></div>
+                <div>
+                    <h3>Integración con Google Maps API</h3>
+                    <p>Geolocalización precisa de los locales en un mapa nativo.</p>
+                </div>
+            </div>
+            <div class="card cyan-border interactive-card fade-in delay-4" style="display: flex; gap: 1rem; align-items: center;">
+                <div class="icon-circle"><i class="fas fa-link text-cyan"></i></div>
+                <div>
+                    <h3>Deep Linking</h3>
+                    <p>Compartir la tienda digital en redes sociales atrayendo tráfico directo.</p>
+                </div>
+            </div>
+            <div class="card interactive-card fade-in delay-5" style="display: flex; gap: 1rem; align-items: center;">
+                <div class="icon-circle"><i class="fas fa-clock text-teal"></i></div>
+                <div>
+                    <h3>Control de Estado (Abierto/Cerrado)</h3>
+                    <p>Switch conectado a Firebase para desaparecer del radar instantáneamente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="layout-split">
+                <div>
+                    <h1 class="fade-in delay-1">Gestión de Personal</h1>
+                    <ul style="list-style-type: none; margin-left: 0; margin-top: 1rem;">
+                        <li class="fade-in delay-2"><i class="fas fa-users-cog text-teal"></i> Roles: Meseros, Cocineros.</li>
+                        <li class="fade-in delay-3"><i class="fas fa-shield-alt text-teal"></i> Aprobación de Staff.</li>
+                        <li class="fade-in delay-4"><i class="fas fa-tasks text-teal"></i> Flujo de Tickets separado.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="fade-in delay-1">Métricas y Finanzas</h1>
+                    <div class="card cyan-border interactive-card fade-in delay-3" style="margin-top: 1rem;">
+                        <i class="fas fa-file-pdf text-cyan icon-lg"></i>
+                        <h3 style="margin: 0;">Reportes Gerenciales</h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;" class="text-light">El sistema consolida la data y genera reportes en <strong>PDF</strong>.</p>
+                        <ul style="font-size: 0.9rem; margin-top: 0.5rem;" class="text-light">
+                            <li>Ventas por canal (Mesa vs Delivery)</li>
+                            <li>Productos estrella</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide layout-center">
+            <h1 class="fade-in delay-1">El Mérito Estudiantil</h1>
+            <p class="text-light fade-in delay-2">Por qué "Los Estudiambres" trasciende el aula.</p>
+            
+            <div class="grid-3 text-left" style="text-align: left; width: 100%;">
+                <div class="card glass-panel fade-in delay-3 interactive-card hover-lift">
+                    <i class="fas fa-layer-group text-teal icon-lg"></i>
+                    <h3>Arquitectura Limpia</h3>
+                    <p style="font-size: 0.9rem;" class="text-light">Patrones de diseño que garantizan código mantenible a futuro.</p>
+                </div>
+                <div class="card glass-panel cyan-border fade-in delay-4 interactive-card hover-lift">
+                    <i class="fas fa-network-wired text-cyan icon-lg"></i>
+                    <h3>Escalabilidad</h3>
+                    <p style="font-size: 0.9rem;" class="text-light">Estructura NoSQL y SaaS lista para miles de suscriptores.</p>
+                </div>
+                <div class="card glass-panel fade-in delay-5 interactive-card hover-lift">
+                    <i class="fas fa-globe-americas text-teal icon-lg"></i>
+                    <h3>Impacto Real</h3>
+                    <p style="font-size: 0.9rem;" class="text-light">Resuelve el dolor de las comisiones mediante tecnología.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide layout-center">
+            <i class="fas fa-rocket text-cyan floating fade-in delay-1" style="font-size: 5rem; margin-bottom: 2rem; filter: drop-shadow(0 0 15px rgba(0,188,212,0.6));"></i>
+            <h1 class="glow-text fade-in delay-2">Visión a Futuro</h1>
+            <h2 class="fade-in delay-3">El siguiente paso</h2>
+            <p class="text-light fade-in delay-4" style="max-width: 600px; margin: 2rem auto; font-size: 1.1rem;">
+                Expandir suscripciones, integrar pasarelas de pago (Stripe/MercadoPago).
+            </p>
+            <h1 class="text-teal fade-in delay-5" style="margin-top: 2rem; font-size: 2.5rem;">¿Listo para ser un Estudiambre?</h1>
+        </div>
+
+    </div>
+
+    <div class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">9</span></div>
+    <div class="controls">
+        <i class="fas fa-chevron-left" id="prevBtn" title="Anterior"></i>
+        <i class="fas fa-chevron-right" id="nextBtn" title="Siguiente"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
